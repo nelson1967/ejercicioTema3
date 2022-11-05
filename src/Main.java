@@ -1,20 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int numFactorial = 10;
-        int resultado = suma(2,3,4);
-        System.out.println("Hello world!: resultado --> "+resultado);
+        int num1 = 2, num2 = 3, num3 = 4;
+        int resultado = suma(num1, num2, num3);
+        System.out.println("resultado de sumar " + num1 + ", " + num2 + " y " + num3 + " es: " + resultado);
         Coche miCoche = new Coche();
-        System.out.println("Mi coche tiene: "+ miCoche.ruedas + " ruedas");
-        miCoche.quitarRueda();
-        System.out.println("Ahora mi coche tiene " + miCoche.ruedas + " ruedas");
-        System.out.println("El factorial de " + numFactorial + " es " + factorial(numFactorial) );
+        System.out.println("Mi coche tiene: "+ miCoche.puertas + " puertas");
+        miCoche.agregarPuerta();
+        System.out.println("Ahora mi coche tiene " + miCoche.puertas + " puertas");
     }
     public static int suma(int a, int b, int c) {
         return a + b +c;
-    }
-    public static int factorial(int n) {
-        if ( n == 1 ) return 1;
-        return n * factorial(n - 1);
     }
 }
 class Coche {
